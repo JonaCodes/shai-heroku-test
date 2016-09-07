@@ -24,7 +24,7 @@ app.post('/test', function(req,res){
 	console.log("saved", m)
 })
 
-app.listen(process.env.port || 1337)
+app.listen(process.env.PORT || 1337)
 
 
 
