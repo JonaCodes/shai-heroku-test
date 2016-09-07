@@ -7,7 +7,7 @@ var Schema = mongoose.Schema
 var schema = new Schema({ name: String })
 var Model = mongoose.model("ModelName", schema)
 
-mongoose.connect(process.env.MONGOLAB_JADE_URI || "mongodb://localhost/herokutest");
+mongoose.connect(process.env.MONGOLAB_BLUE_URI || "mongodb://localhost/herokutest");
 
 var bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({extended:false}));
